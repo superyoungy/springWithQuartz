@@ -1,1 +1,1 @@
-使用quartz的过程中遇到jar包不匹配的情况，于是图省事把quartz用到的一套jar包放到resource目录下。但是其他的无关quartz的代码会受到jar包影响而无法运行。
+使用quartz的过程中遇到jar包不匹配的情况，于是图省事把quartz用到的一套jar包放到resources/myjar目录下。但是其他的无关quartz的代码会受到jar包影响而无法运行。这时候只要把quartz模块单独提取，并移除resources/myjar中的jar包（quartz和其他模块是独立的）即可。
